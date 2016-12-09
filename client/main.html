@@ -1,0 +1,12 @@
+<head>
+  <base href="/">
+  <title>addressBook</title>
+</head>
+
+<body>
+  <div class="well"> {{>loginButtons}}</div>
+  {{#if currentUser}}
+    {{> addressList}}
+    {{> addressInput}}
+  {{/if}}
+</body>
